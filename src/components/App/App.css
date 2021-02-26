@@ -1,0 +1,29 @@
+main {
+  margin-top: 10px;
+  background-color: #232323;
+}
+
+main > * {
+  margin: 15px 0px;
+}
+
+.header {
+  position: relative;
+  background-image: url(../../../../react-js-mentoring/task2-11/src/sources/background-header.jpg);
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.header > * {
+  position: relative;
+  z-index: 3;
+}
